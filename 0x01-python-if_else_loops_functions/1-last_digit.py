@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 if (number < 0):
-    unid = (-1 * number % 10) * (-1)
+    unid = number % -10
 else:
     unid = number % 10
 if (unid > 5):
