@@ -6,4 +6,3 @@ if __name__ == "__main__":
         num = int(sys.argv[i])
         suma = suma + num
     print(suma)
-    
