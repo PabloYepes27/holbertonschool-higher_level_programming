@@ -16,7 +16,6 @@ int is_palindrome(listint_t **head)
 	if (head == NULL || (*head)->next == NULL)
 		return (1);
 	len = listint_len(*head);
-	printf("\nlen before %d\n", len);
 	if (len % 2 != 0)
 		len = len / 2;
 	else
@@ -24,17 +23,12 @@ int is_palindrome(listint_t **head)
 		len = len / 2;
 		len -= 1;
 	}
-	printf("len after %d\n", len);
 	while (i <= len)
 	{
 		tmp = tmp->next;
 		i++;
 	}
-	printf("list before reverse\n");
-	print_listint(*head);
 	reverse_listint(&tmp);
-	printf("list after reverse\n");
-	print_listint(*head);
 	while (tmp)
 	{
 
