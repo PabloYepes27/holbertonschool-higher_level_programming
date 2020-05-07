@@ -9,4 +9,5 @@ def common_elements(set_1, set_2):
     Returns:
         [type] -- a set of common elements in two sets
     """
-    return list(elem for elem in set_1 if elem in set_2)
+    #return list(elem for elem in set_1 if elem in set_2)
+    return list(set_1 & set_2)
