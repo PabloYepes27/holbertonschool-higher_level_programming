@@ -12,5 +12,5 @@ def complex_delete(a_dictionary, value):
     tmp_dictionary = a_dictionary.copy()
     for key, val in tmp_dictionary.items():
         if val == value:
-            a_dictionary.pop(key)
+            del a_dictionary[key]
     return tmp_dictionary
