@@ -10,7 +10,7 @@ def complex_delete(a_dictionary, value):
         [type] -- The directory modified or the same if the value doesn't exist
     """
     tmp_dictionary = a_dictionary.copy()
-    for key, val in tmp_dictionary.items():
-        if val == value:
-            del a_dictionary[key]
-    return tmp_dictionary
+    for key, v in tmp_dictionary.items():
+        if v == value:
+            a_dictionary.pop(key)
+    return a_dictionary
