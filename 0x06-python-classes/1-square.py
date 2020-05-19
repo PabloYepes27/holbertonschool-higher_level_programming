@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+
+
+" A class Square that defines a square "
+
+
 class Square:
     """
-    A class Square that defines a square
+    Square class
 
     Attributes:
         size (no type/value verification) : Private instance attribute
