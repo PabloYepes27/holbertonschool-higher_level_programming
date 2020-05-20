@@ -7,23 +7,39 @@
 class Square:
     """
     Square class
-
-    Attributes:
-        size (int) : Private instance attribute
-        position (tuple) : Private instance attribute,
-        the first argument is the name of the spaces to the left,
-        the second argument is the new lines before print
     """
     def __init__(self, size=0, position=(0, 0)):
+        """[summary]
+
+        Keyword Arguments:
+            size {int} -- [description] (default: {0})
+            position {tuple} -- [the first argument is the name of the
+            spaces to the left, the second argument is the new lines
+            before print] (default: {(0, 0)})
+        """
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """[summary]
+
+        Returns:
+            [int] -- [size]
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """[summary]
+
+        Arguments:
+            value {[int]} -- [size]
+
+        Raises:
+            TypeError: [size must be an integer]
+            ValueError: [size must be >= 0]
+        """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -33,20 +49,21 @@ class Square:
 
     @property
     def position(self):
+        """[summary]
+
+        Returns:
+            [tuple] -- [description]
+        """
         return self.__position
 
     @position.setter
     def position(self, value):
-        if type(value) is not tuple:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(value[0]) is not int or type(value[1]) is not int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif value[0] < 0 or value[1] < 0:
-            raise ValueError("position must be a tuple of 2 positive integers")
-        elif len(value) is not 2:
-            raise ValueError("position must be a tuple of 2 positive integers")
-        else:
+        if (isinstance(value, tuple) and len(value) is 2 and
+                value[0] >= 0 and value[1] >= 0 and
+                isinstance(value[0], int) and isinstance(value[1], int)):
             self.__position = value
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
     """
     Public instance method that returns the current square area
 
@@ -58,6 +75,8 @@ class Square:
     Public instance method that prints in the square with the character #
     """
     def my_print(self):
+        """[summary]
+        """
         if self.__size == 0:
             print()
         else:
