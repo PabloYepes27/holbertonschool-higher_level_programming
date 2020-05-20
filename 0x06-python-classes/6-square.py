@@ -55,7 +55,7 @@ class Square:
         elif len(value) is not 2:
             raise ValueError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = value
+            self.__position = position
     """
     Public instance method that returns the current square area
     """
