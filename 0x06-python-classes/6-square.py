@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 " A class Square that defines a square "
 
 
@@ -39,7 +37,7 @@ class Square:
             TypeError: [size must be an integer]
             ValueError: [size must be >= 0]
         """
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
@@ -57,29 +55,31 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """ position setter
+        """
         if ((isinstance(value, tuple)) and len(value) == 2 and
                 (value[0] >= 0 and value[1] >= 0) and
                 (isinstance(value[0], int)) and (isinstance(value[1], int))):
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
-    """
-    Public instance method that returns the current square area
 
-    Returns: Area of the aquare
-    """
     def area(self):
+        """
+        Public instance method that returns the current square area
+
+        Returns: Area of the aquare
+        """
         return self.__size ** 2
-    """
-    Public instance method that prints in the square with the character #
-    """
+
     def my_print(self):
-        """[summary]
+        """
+        Public instance method that prints in the square with the character #
         """
         if self.__size == 0:
             print()
             return
-        for i in range(0, self.__position[1]):
+        for i in range(self.__position[1]):
             print()
-        for i in range(0, self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
+        for i in range(self.__size):
+            print((" " * self.__position[0]) + ("#" * self.__size))
