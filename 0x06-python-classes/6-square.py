@@ -52,6 +52,8 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise ValueError("position must be a tuple of 2 positive integers")
+        elif len(value) is not 2:
+            raise ValueError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
     """
