@@ -15,19 +15,8 @@ class Square:
         the second argument is the new lines before print
     """
     def __init__(self, size=0, position=(0, 0)):
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        elif type(position[0]) is not int or type(position[1]) is not int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif position[0] < 0 or position[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif len(position) is not 2:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__size = size
-            self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
