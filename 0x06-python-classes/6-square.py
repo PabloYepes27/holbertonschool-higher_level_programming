@@ -10,7 +10,7 @@ class Square:
 
     Attributes:
         size (int) : Private instance attribute
-        position (yuple) : Private instance attribute,
+        position (tuple) : Private instance attribute,
         the first argument is the name of the spaces to the left,
         the second argument is the new lines before print
     """
@@ -58,6 +58,8 @@ class Square:
             self.__position = value
     """
     Public instance method that returns the current square area
+
+    Returns: Area of the aquare
     """
     def area(self):
         return self.__size ** 2
