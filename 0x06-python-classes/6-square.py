@@ -10,7 +10,7 @@ class Square:
 
     Attributes:
         size (int) : Private instance attribute
-        position (yuple) : Private instance attribute, 
+        position (yuple) : Private instance attribute,
         the first argument is the name of the spaces to the left,
         the second argument is the new lines before print
     """
@@ -65,8 +65,9 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
-        for i in range(0, self.__position[1]):
-            print()
-        for i in range(0, self.__size):
-            print(" " * self.__position[0], end="")
-            print("#" * self.__size,)
+        else:
+            for i in range(0, self.__position[1]):
+                print()
+            for i in range(0, self.__size):
+                print(" " * self.__position[0], end="")
+                print("#" * self.__size,)
