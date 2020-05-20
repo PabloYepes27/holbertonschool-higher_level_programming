@@ -5,8 +5,7 @@
 
 
 class Square:
-    """
-    Square class
+    """ Square class
     """
     def __init__(self, size=0, position=(0, 0)):
         """[Constructor]
@@ -58,7 +57,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if (isinstance(value, tuple) and len(value) is 2 and
+        if (isinstance(value, tuple) and len(value) == 2 and
                 value[0] >= 0 and value[1] >= 0 and
                 isinstance(value[0], int) and isinstance(value[1], int)):
             self.__position = value
