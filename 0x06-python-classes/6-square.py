@@ -9,7 +9,7 @@ class Square:
     Square class
     """
     def __init__(self, size=0, position=(0, 0)):
-        """[summary]
+        """[Constructor]
 
         Keyword Arguments:
             size {int} -- [description] (default: {0})
@@ -22,7 +22,7 @@ class Square:
 
     @property
     def size(self):
-        """[summary]
+        """[obtain the data]
 
         Returns:
             [int] -- [size]
@@ -31,7 +31,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """[summary]
+        """[]
 
         Arguments:
             value {[int]} -- [size]
@@ -79,8 +79,8 @@ class Square:
         """
         if self.__size == 0:
             print()
-        else:
-            for i in range(0, self.__position[1]):
-                print()
-            for i in range(0, self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+            return
+        for i in range(0, self.__position[1]):
+            print()
+        for i in range(0, self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
