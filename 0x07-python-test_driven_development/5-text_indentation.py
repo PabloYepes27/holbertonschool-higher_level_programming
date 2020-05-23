@@ -13,7 +13,12 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
+    count = "."
+    for c in text:
+        if c is " " and count in ".?:":
+            continue
+        print(c, end="")
+        if c in ".:?":
+            print("\n")
+        count = c
 
-    for delim in ":.?":
-        text = str(delim + "\n\n").join(s.strip() for s in text.split(delim))
-    print(text, end="")
