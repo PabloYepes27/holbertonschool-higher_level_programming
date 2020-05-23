@@ -33,7 +33,6 @@ def matrix_divided(matrix, div):
     for row in matrix:
         if type(row) is not list:
             raise TypeError(err1)
-    else:
         for elem in row:
             if type(elem) not in (int, float):
                 raise TypeError(err1)
