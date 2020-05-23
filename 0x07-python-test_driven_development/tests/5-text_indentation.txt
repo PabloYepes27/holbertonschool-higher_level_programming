@@ -1,0 +1,23 @@
+IMPORT
+		>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+TESTS
+
+Test0: number
+        >>> text_indentation(25)
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+Test1: correctly written text
+        >>> text_indentation("This is a house. This is my house and my house has: a window, a door and walls. Does it has a roof? yes, it has it")
+        This is a house.
+        <BLANKLINE>
+        This is my house and my house has:
+        <BLANKLINE>
+        a window, a door and walls.
+        <BLANKLINE>
+        Does it has a roof?
+        <BLANKLINE>
+        yes, it has it
+
