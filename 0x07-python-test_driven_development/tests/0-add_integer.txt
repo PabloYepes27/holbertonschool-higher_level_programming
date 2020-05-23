@@ -37,3 +37,8 @@ Test6: Add one float and one string
         ...
         TypeError: b must be an integer
 
+Test6: Add one float and one string
+        >>> add_integer(7.8, "20")
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
