@@ -21,3 +21,8 @@ Test1: correctly written text
         <BLANKLINE>
         yes, it has it
 
+Test2: correctly written text
+        >>> text_indentation()
+        Traceback (most recent call last):
+        ...
+        TypeError: text_indentation() missing 1 required positional argument: 'text'

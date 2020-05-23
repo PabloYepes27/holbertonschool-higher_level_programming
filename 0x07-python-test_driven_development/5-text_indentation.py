@@ -21,4 +21,3 @@ def text_indentation(text):
         if c in ".:?":
             print("\n")
         count = c
-
