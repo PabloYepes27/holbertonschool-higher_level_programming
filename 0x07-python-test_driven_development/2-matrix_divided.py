@@ -43,5 +43,4 @@ def matrix_divided(matrix, div):
     if any(len(i) is not len(matrix[0]) for i in matrix):
         raise TypeError(err2)
 
-
     return [[round((elem / div), 2) for elem in row] for row in matrix]
