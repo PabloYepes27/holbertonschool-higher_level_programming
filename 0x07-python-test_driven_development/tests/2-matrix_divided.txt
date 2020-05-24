@@ -18,7 +18,7 @@ Test2: matrix empty
         >>> matrix_divided(matrix, 2)
         Traceback (most recent call last):
         ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats
+        IndexError: list index out of range
 
 Test3: matrix with different size of rows
         >>> matrix = [[1.5, 2, 3], [7, 8.5, 9, 21], [1, 4, 7]]
