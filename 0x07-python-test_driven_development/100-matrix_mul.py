@@ -3,6 +3,25 @@
 
 
 def matrix_mul(m_a, m_b):
+    """[summary]
+
+    Arguments:
+        m_a {[type]} -- [description]
+        m_b {[type]} -- [description]
+
+    Raises:
+        TypeError: [description]
+        TypeError: [description]
+        TypeError: [description]
+        TypeError: [description]
+        TypeError: [description]
+        TypeError: [description]
+        ValueError: [description]
+        ValueError: [description]
+        TypeError: [description]
+        TypeError: [description]
+        ValueError: [description]
+    """
     m_c = []
     m_temp = []
     if type(m_a) is not (list):
@@ -30,12 +49,6 @@ def matrix_mul(m_a, m_b):
 
     if len(m_b) is 0:
         raise ValueError("m_b can't be empty")
-
-    """if any(len(i) is not len(m_a[0]) for i in m_a):
-        raise TypeError("each row of m_a must be of the same size")
-
-    if any(len(i) is not len(m_b[0]) for i in m_a):
-        raise TypeError("each row of m_b must be of the same size")"""
 
     if len(set([len(row) for row in m_a])) is not 1:
         raise TypeError("each row of m_a must be of the same size")
