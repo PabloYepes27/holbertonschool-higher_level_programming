@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-"""[summary]"""
+"""[Write a function that divides all elements of a matrix.]"""
 
 
 def matrix_divided(matrix, div):
-    """[summary]
+    """[print the full name]
 
     Arguments:
-        matrix {[type]} -- [description]
+        matrix {[lis]} -- [description]
         div {[type]} -- [description]
 
     Raises:
-        TypeError: [description]
-        ZeroDivisionError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
+        TypeError: [matrix must be a matrix
+         (list of lists) of integers/floats]
+        ZeroDivisionError: [division by zero]
+        TypeError: [Each row of the matrix must have the same size]
+        TypeError: [div must be a number]
 
     Returns:
         [type] -- [description]

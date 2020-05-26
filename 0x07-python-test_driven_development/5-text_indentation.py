@@ -1,19 +1,20 @@
 #!/usr/bin/python3
-"""[summary]"""
+"""Write a function that prints a text with 2
+ new lines after each of these characters: ., ? and :"""
 
 
 def text_indentation(text):
-    """[summary]
+    """indent the text with new lines with delimiters
 
     Arguments:
-        text {[type]} -- [description]
+        text {[string]} -- [description]
 
     Raises:
-        TypeError: [description]
+        TypeError: [text must be a string]
     """
     if type(text) is not str:
         raise TypeError("text must be a string")
-    count = "."
+    count = ":"
     for c in text:
         if c is " " and count in ".?:":
             continue

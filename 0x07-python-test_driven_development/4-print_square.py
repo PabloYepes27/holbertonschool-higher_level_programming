@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""[summary]"""
+"""Write a function that prints a square with the character #"""
 
 
 def print_square(size):
-    """[summary]
+    """print a square of #'s
 
     Arguments:
-        size {[type]} -- [description]
+        size {[int]} -- [description]
 
     Raises:
-        TypeError: [description]
-        TypeError: [description]
-        ValueError: [description]
+        TypeError: [size must be an integer]
+        ValueError: [size must be >= 0]
     """
     if type(size) is float and size < 0:
         raise TypeError("size must be an integer")

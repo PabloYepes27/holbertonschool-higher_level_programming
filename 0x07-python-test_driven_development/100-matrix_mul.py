@@ -1,26 +1,26 @@
 #!/usr/bin/python3
-"""[summary]"""
+"""[Write a function that multiplies 2 matrices:]"""
 
 
 def matrix_mul(m_a, m_b):
-    """[summary]
+    """[Multiply to matrix]
 
     Arguments:
-        m_a {[type]} -- [description]
-        m_b {[type]} -- [description]
+        m_a {[list of list]} -- [description]
+        m_b {[list of list]} -- [description]
 
     Raises:
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        ValueError: [description]
-        ValueError: [description]
-        TypeError: [description]
-        TypeError: [description]
-        ValueError: [description]
+        TypeError: [m_a must be a list]
+        TypeError: [m_b must be a list]
+        TypeError: [m_a must be a list of lists]
+        TypeError: [m_a can't be empty]
+        TypeError: [m_a should contain only integers or floats]
+        TypeError: [m_b must be a list of lists]
+        ValueError: [m_b can't be empty]
+        ValueError: [each row of m_a must be of the same size]
+        TypeError: [each row of m_b must be of the same size]
+        TypeError: [m_b should contain only integers or floats]
+        ValueError: [m_a and m_b can't be multiplied]
     """
     m_c = []
     m_temp = []

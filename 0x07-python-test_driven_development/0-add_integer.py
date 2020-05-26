@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-"""[summary]"""
+"""Write a function that adds 2 integers."""
 
 
 def add_integer(a, b=98):
-    """[summary]
+    """adds 2 integers.
 
     Arguments:
-        a {[type]} -- [description]
+        a {[int]} -- [description]
 
     Keyword Arguments:
         b {int} -- [description] (default: {98})
 
     Raises:
-        TypeError: [description]
-        TypeError: [description]
+        TypeError: [a must be an integer]
+        TypeError: [b must be an integer]
 
     Returns:
-        [type] -- [description]
+        [int] -- [addition]
     """
     if type(a) is float:
         a = int(a)
