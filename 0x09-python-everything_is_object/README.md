@@ -8,6 +8,7 @@ Read or watch:
 * [Mutation](http://composingprograms.com/pages/24-mutable-data.html#sequence-objects)
 * [9.12. Cloning lists](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html#cloning-lists)
 * [Python tuples: immutable but potentially changing](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html)
+* [Two variables in Python have same id, but not lists or tuples](https://stackoverflow.com/questions/38189660/two-variables-in-python-have-same-id-but-not-lists-or-tuples)
 
 ---
 ## Learning Objectives:bulb:
