@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-def lookup(obj):
-    """[function that returns the list of
+"""[function that returns the list of
     available attributes and methods of an object]
+    """
 
+
+def lookup(obj):
+    """
     The dir() function returns all properties and
     methods of the specified object, without the values.
 
