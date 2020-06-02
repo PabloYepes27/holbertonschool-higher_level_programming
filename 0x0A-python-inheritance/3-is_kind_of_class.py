@@ -5,7 +5,7 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """[summary]
+    """[subclass of a class]
 
     Arguments:
         obj {[type]} -- [object of different clases]
@@ -16,7 +16,4 @@ def is_kind_of_class(obj, a_class):
  instance, or if the object is an instance of a class
   that inherited from; otherwise False]
     """
-    if isinstance(obj, a_class):
-        return True
-    else:
-        return False
+    return isinstance(obj, a_class)
