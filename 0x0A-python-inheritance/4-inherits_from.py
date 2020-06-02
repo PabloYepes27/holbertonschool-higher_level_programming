@@ -5,7 +5,8 @@
 
 
 def inherits_from(obj, a_class):
-    """[ instance of a class that inherited]
+    """[check if the class of an object is a subclass of a_class
+     and if it doesn't is the a_class itself  ]
 
     Arguments:
         obj {[type]} -- [object of different clases]
@@ -15,7 +16,4 @@ def inherits_from(obj, a_class):
         [bool] -- [True if the object is an instance
          of a class that inherited; otherwise False]
     """
-    if issubclass(type(obj), a_class) and type(obj) is not a_class:
-        return True
-    else:
-        return False
+    return issubclass(type(obj), a_class) and type(obj) is not a_class
