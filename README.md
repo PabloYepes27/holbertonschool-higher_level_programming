@@ -56,5 +56,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## Creator
-[Juan Pablo Yepes](https://github.com/PabloYepes27)
+
+## Author
+* **Juan Pablo Yepes Tamayo**
+ - [GitHub](https://github.com/PabloYepes27)
+ - [Linkedin](https://www.linkedin.com/in/pablo-yepes-120495)
+ - [Twitter](https://twitter.com/pabloyepes27)
