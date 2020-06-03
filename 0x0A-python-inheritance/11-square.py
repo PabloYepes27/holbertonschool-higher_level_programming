@@ -35,4 +35,4 @@ class Square(Rectangle):
         Returns:
             [str] -- [description]
         """
-        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
+        return ("[Square] {}/{}".format(self.__size, self.__size))
