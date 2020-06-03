@@ -8,6 +8,7 @@ Read or watch:
 * [JSON encoder and decoder](https://docs.python.org/3.4/library/json.html)
 * [Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
 * [Python JSON](https://www.w3schools.com/python/python_json.asp)
+* [OOP Summary](https://docs.google.com/document/d/1xO7x-n0Z07-bB0vkON7pYx0dwhNsV0H5El9CEmq97d0/edit?usp=sharing)
 
 ---
 ## Learning Objectives:bulb:
