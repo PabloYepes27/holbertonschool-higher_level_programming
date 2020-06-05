@@ -8,13 +8,14 @@ def pascal_triangle(n):
 You can assume n will be always an integer
 
     Args:
-        n ([type]): [description]
+        n ([int]): [height]
 
     Returns:
-        [type]: [description]
+        [list]: [triangle]
     """
+    if n <= 0:
+        return []
     triangle = []
-    ls = []
     for row in range(0, n):
         ls = []
         for col in range(0, row + 1):
@@ -23,5 +24,4 @@ You can assume n will be always an integer
             else:
                 ls.append(triangle[row - 1][col - 1] + triangle[row - 1][col])
         triangle.append(ls)
-        print(triangle)
     return triangle
