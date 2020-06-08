@@ -2,17 +2,26 @@
 from models.base import Base
 """
 Task 2: Write the class Rectangle that inherits from Base
-Task 3: Update the class Rectangle by adding validation of
-        all setter methods and instantiation (id excluded)
-Task 4: Update the class Rectangle by adding the public
-        method def area(self): that returns the area value
-        of the Rectangle instance.
-Task 5: Update the class Rectangle by adding the public method
-        def display(self): that prints in stdout the Rectangle
-        instance with the character #
-Task 6: Update the class Rectangle by overriding the __str__
-        method so that it returns
-        [Rectangle] (<id>) <x>/<y> - <width>/<height>
+Task 3: Update the class Rectangle by adding validation of all setter
+        methods and instantiation (id excluded)
+Task 4: Update the class Rectangle by adding the public method def area
+        (self): that returns the area value of the Rectangle instance.
+Task 5: Update the class Rectangle by adding the public method def display
+        (self): that prints in stdout the Rectangle instance with the
+        character #
+Task 6: Update the class Rectangle by overriding the __str__ method so that
+        it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+Task 7: Update the class Rectangle by improving the public method def
+        display(self): to print in stdout the Rectangle instance with the
+        character # by taking care of x and y
+Task 8: Update the class Rectangle by adding the public method def update
+        (self, *args): that assigns an argument to each attribute
+Task 9: Update the class Rectangle by updating the public method def update
+        (self, *args): by changing the prototype to update(self, *args,
+        **kwargs) that assigns a key/value argument to attributes
+Task 13:Update the class Rectangle by adding the public method def
+        to_dictionary(self): that returns the dictionary representation of
+        a Rectangle
 """
 
 
@@ -132,11 +141,46 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Public method display the rectangle"""
+        """Public method display the rectangle by taking care of x and y"""
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print("#" * self.__width)
+            print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """overriding the __str__ method so that it returns a string"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
+
+    def update(self, *args, **kwargs):
+        """update the attributes of the class with the key-worded
+        and non-key-worded arguments]
+
+        The setattr() function sets the value of the attribute of an object.
+        setattr(object, name, value)
+
+        for n in range(len(args)):
+            if n is 0:
+                self.id = args[0]
+            elif n is 1:
+                self.width = args[1]
+            elif n is 2:
+                self.height = args[2]
+            elif n is 3:
+                self.x = args[3]
+            elif n is 4:
+                self.y = args[4]
+        """
+        attr = ['id', 'width', 'height', 'x', 'y']
+        if args is None or not args:
+            for key, val in kwargs.items():
+                setattr(self, key, val)
+        else:
+            for n in range(len(args)):
+                setattr(self, attr[n], args[n])
+
+    def to_dictionary(self):
+        """method that returns the dictionary representation
+        of a Rectangle"""
+        return dict(id=self.id, x=self.__x, y=self.__y,
+                    width=self.__width, height=self.__height)
