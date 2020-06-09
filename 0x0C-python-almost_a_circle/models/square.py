@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Task 10: Write the class Square that inherits from Rectangle
 Task 11: Update the class Square by adding the public getter and setter size
