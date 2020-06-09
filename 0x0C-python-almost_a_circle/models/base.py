@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import json
-import os.path
 """
 Task 1 : Write the first class Base with a private class attribute
 Task 15: Update the class Base by adding the static method def
@@ -18,6 +16,7 @@ Task 18: Update the class Base by adding the class method def create
 Task 19: Update the class Base by adding the class method def
          load_from_file(cls): that returns a list of instances
 """
+import json
 
 
 class Base:
