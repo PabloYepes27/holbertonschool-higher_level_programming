@@ -17,6 +17,7 @@ Task 19: Update the class Base by adding the class method def
          load_from_file(cls): that returns a list of instances
 """
 import json
+import os.path
 
 
 class Base:
