@@ -8,12 +8,24 @@ Task 14: Update the class Square by adding the public method def
          to_dictionary(self): that returns the dictionary representation of a
          Square
 """
-from models.base import Base
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """[summary]
+
+    Args:
+        Rectangle ([type]): [description]
+    """
     def __init__(self, size, x=0, y=0, id=None):
+        """[summary]
+
+        Args:
+            size ([type]): [description]
+            x (int, optional): [description]. Defaults to 0.
+            y (int, optional): [description]. Defaults to 0.
+            id ([type], optional): [description]. Defaults to None.
+        """
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
