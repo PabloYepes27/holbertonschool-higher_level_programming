@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from models.base import Base
 """
 Task 2: Write the class Rectangle that inherits from Base
 Task 3: Update the class Rectangle by adding validation of all setter
@@ -23,6 +22,7 @@ Task 13:Update the class Rectangle by adding the public method def
         to_dictionary(self): that returns the dictionary representation of
         a Rectangle
 """
+from models.base import Base
 
 
 class Rectangle(Base):

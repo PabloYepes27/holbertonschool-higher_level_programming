@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from models.rectangle import Rectangle
+
 """
 Task 10: Write the class Square that inherits from Rectangle
 Task 11: Update the class Square by adding the public getter and setter size
@@ -9,6 +9,7 @@ Task 14: Update the class Square by adding the public method def
          to_dictionary(self): that returns the dictionary representation of a
          Square
 """
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
