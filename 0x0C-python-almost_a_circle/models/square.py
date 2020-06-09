@@ -8,6 +8,7 @@ Task 14: Update the class Square by adding the public method def
          to_dictionary(self): that returns the dictionary representation of a
          Square
 """
+from models.base import Base
 from models.rectangle import Rectangle
 
 
