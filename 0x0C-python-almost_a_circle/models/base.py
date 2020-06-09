@@ -129,9 +129,9 @@ class Base:
             [object]: [an instance with all attributes already set]
         """
         if cls.__name__ == 'Rectangle':
-            dummy = cls(width=5, height=4, x=2, y=1)
+            dummy = cls(4, 3)
         elif cls.__name__ == 'Square':
-            dummy = cls(size=7, x=2, y=1)
+            dummy = cls(5)
         dummy.update(**dictionary)
         return dummy
 
