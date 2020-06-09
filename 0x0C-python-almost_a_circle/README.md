@@ -2,10 +2,13 @@
 
 ## Resources:books:
 Read or watch:
-* [args/kwargs](https://intranet.hbtn.io/rltoken/LroIjBBI5Gqq3ciR-OHmxg)
-* [JSON encoder and decoder](https://intranet.hbtn.io/rltoken/TY4rfu2AZtXlRmPVNZm1Lw)
-* [unittest module](https://intranet.hbtn.io/rltoken/T7uxwxtGdbRRW9pkD4eO0g)
-* [Python test cheatsheet](https://intranet.hbtn.io/rltoken/SfEo3RQeAXXYI9yabFRw3g)
+* [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+* [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+* [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
+* [unittest module](https://docs.python.org/3.4/library/unittest.html#module-unittest)
+* [JASON - Socratica](https://www.youtube.com/watch?v=pTT7HMqDnJw)
+* [**args y **kwargs (argumentos)](https://www.youtube.com/watch?v=jj_NKNDC7Aw)
+* [Superclass method super( ) - super().__init__(length...) ](https://realpython.com/python-super/)
 
 ---
 ## Learning Objectives:bulb:
@@ -110,4 +113,7 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Juan Pablo Yepes Tamayo** - [PabloYepes27](https://github.com/PabloYepes27)
+* **Juan Pablo Yepes Tamayo**
+ - [GitHub](https://github.com/PabloYepes27)
+ - [Linkedin](https://www.linkedin.com/in/pablo-yepes-120495)
+ - [Twitter](https://twitter.com/pabloyepes27)
