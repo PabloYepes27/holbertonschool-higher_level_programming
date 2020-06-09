@@ -15,9 +15,17 @@ Task 18: Update the class Base by adding the class method def create
          already set
 Task 19: Update the class Base by adding the class method def
          load_from_file(cls): that returns a list of instances
+Task 20: Update the class Base by adding the class methods def save_to_file_csv
+         (cls, list_objs): and def load_from_file_csv(cls): that serializes and
+         deserializes in CSV
+Task 21: Update the class Base by adding the static method def draw(list_
+         rectangles, list_squares): that opens a window and draws all the
+         Rectangles and Squares:
 """
 import json
 import os.path
+import csv
+import turtle
 
 
 class Base:
@@ -152,3 +160,53 @@ class Base:
             return json_ls
         else:
             return json_ls
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        filename = cls.__name__ + ".csv"
+        ls = []
+        # create and open a file
+        with open(filename, mode="w", encoding="UTF8") as file:
+            if list_objs is not None:
+                # access to every object(instance) of the list
+                for objs in list_objs:
+                    """convert every object into a dictionary via function
+                    to_dictionary and then append them into a list"""
+                    ls.append(cls.to_dictionary(objs))
+            """write or overwrite the file with the list of dictionaries
+            previosuly created or a empty list in case list_objs is None"""
+            file.write(cls.to_json_string(ls))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        csv_ls = []
+        filename = cls.__name__ + ".csv"
+        if os.path.isfile(filename):
+            with open(filename, encoding="UTF8") as file:
+                # read the JSON file (dictionary)
+                csv_dic = file.read()
+                # convert from JSON dictionary into a list of strings
+                csv_list_of_str = cls.from_json_string(csv_dic)
+                for str_instance in csv_list_of_str:
+                    # create the instances and add them to the list
+                    csv_ls.append(cls.create(**str_instance))
+            return csv_ls
+        else:
+            return csv_ls
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        Franklin = turtle.Turtle()
+        Franklin.forward(50)
+        Franklin.right(90)     # Rotate clockwise by 90 degrees
+
+        Franklin.forward(50)
+        Franklin.right(90)
+
+        Franklin.forward(50)
+        Franklin.right(90)
+
+        Franklin.forward(50)
+        Franklin.right(90)
+
+        turtle.done()
