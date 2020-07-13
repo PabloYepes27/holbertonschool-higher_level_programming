@@ -167,6 +167,7 @@ Read or watch:
 * [What makes the big difference between a backtick and an apostrophe?](https://stackoverflow.com/questions/29402361/what-makes-the-big-difference-between-a-backtick-and-an-apostrophe/29402458)
 * [MySQL Cheat Sheet](https://intellipaat.com/mediaFiles/2019/02/SQL-Commands-Cheat-Sheet.pdf)
 * [MySQL 5.7 SQL Statement Syntax](https://dev.mysql.com/doc/refman/5.7/en/sql-statements.html)
+* [MySQL by Examples for Beginners](https://www3.ntu.edu.sg/home/ehchua/programming/sql/MySQL_Beginner.html)
 * [Introduction to SQL - Socrática](https://www.youtube.com/playlist?list=PLi01XoE8jYojRqM4qGBF1U90Ee1Ecb5tt)
 * [Intro to SQL basics - Khanacademy](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/pt/aggregating-data)
 * [How to Create a Database from a Script in MySQL](https://database.guide/how-to-create-a-database-from-a-script-in-mysql/)
