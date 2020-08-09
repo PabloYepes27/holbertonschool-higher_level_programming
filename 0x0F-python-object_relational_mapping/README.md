@@ -59,88 +59,77 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
 
 ## Tasks:clipboard:
 
-### [0. My privileges!](./0-privileges.sql)
-* Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost).
+### [0. Get all states](./0-select_states.py)
+* Write a script that lists all states from the database hbtn_0e_0_usa:
 
 
-### [1. Root user](./1-create_user.sql)
-* Write a script that creates the MySQL server user user_0d_1. 
+### [1. Filter states](./1-filter_states.py)
+* Write a script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
 
 
-### [2. Read user](./2-create_read_user.sql)
-* Write a script that creates the database hbtn_0d_2 and the user user_0d_2. 
+### [2. Filter states by user input](./2-my_filter_states.py)
+* Write a script that takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
 
 
-### [3. Always a name](./3-force_name.sql)
-* Write a script that creates the table force_name on your MySQL server.
+### [3. SQL Injection... ](./3-my_safe_filter_states.py)
+* write a script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, write one that is safe from MySQL injections!
 
 
-### [4. ID can't be null](./4-never_empty.sql)
-* Write a script that creates the table id_not_null on your MySQL server.
+### [4. Cities by states ](./4-cities_by_state.py)
+* Write a script that lists all cities from the database hbtn_0e_4_usa
 
 
-### [5. Unique ID](./5-unique_id.sql)
-* Write a script that creates the table unique_id on your MySQL server.
+### [5. All cities by state](./5-filter_cities.py)
+* Write a script that takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa
 
 
-### [6. States table](./6-states.sql)
-* Write a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
+### [6. First state model](./model_state.py)
+* Write a python file that contains the class definition of a State and an instance Base = declarative_base():
 
 
-### [7. Cities table](./7-cities.sql)
-* Write a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
+### [7. All states via SQLAlchemy ](./7-model_state_fetch_all.py)
+* Write a script that lists all State objects from the database hbtn_0e_6_usa
 
 
-### [8. Cities of California](./8-cities_of_california_subquery.sql)
-* Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
+### [8. First state ](./8-model_state_fetch_first.py)
+* Write a script that prints the first State object from the database hbtn_0e_6_usa
 
 
-### [9. Cities by States](./9-cities_by_state_join.sql)
-* Write a script that lists all cities contained in the database hbtn_0d_usa.
+### [9. Contains `a` ](./9-model_state_filter_a.py)
+* Write a script that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
 
 
-### [10. Genre ID by show](./10-genre_id_by_show.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download
+### [10. Get a state ](./10-model_state_my_get.py)
+* Write a script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa
 
 
-### [11. Genre ID for all shows](./11-genre_id_all_shows.sql)
-* Import the database dump of hbtn_0d_tvshows to your MySQL server: download (same as 10-genre_id_by_show.sql)
+### [11. Add a new state](./11-model_state_insert.py)
+* Write a script that adds the State object “Louisiana” to the database hbtn_0e_6_usa
 
 
-### [12. No genre](./12-no_genre.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 11-genre_id_all_shows.sql)
+### [12. Update a state](./12-model_state_update_id_2.py)
+* Write a script that changes the name of a State object from the database hbtn_0e_6_usa
+
+### [13. Delete states](./13-model_state_delete_a.py)
+* Write a script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
 
 
-### [13. Number of shows by genre](./13-count_shows_by_genre.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 12-no_genre.sql)
+### [14. Cities in state](./14-model_city_fetch_by_state.py)
+* Write a Python file similar to model_state.py named model_city.py that contains the class definition of a City.
 
 
-### [14. My genres](./14-my_genres.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 13-count_shows_by_genre.sql)
+### [15. City relationship](./100-relationship_states_cities.py)
+* Improve the files model_city.py and model_state.py, and save them as relationship_city.py and relationship_state.py
 
 
-### [15. Only Comedy](./15-comedy_only.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 14-my_genres.sql)
+### [16. List relationship](./101-relationship_states_cities_list.py)
+* Write a script that lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa
 
 
-### [16. List shows and genres](./16-shows_by_genre.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 15-comedy_only.sql)
+### [17. From city](./102-relationship_cities_states_list.py)
+* Write a script that lists all City objects from the database hbtn_0e_101_usa
 
 
-### [17. Not my genre](./100-not_my_genres.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 16-shows_by_genre.sql)
-
-
-### [18. No Comedy tonight!](./101-not_a_comedy.sql)
-* Import the database dump from hbtn_0d_tvshows to your MySQL server: download (same as 100-not_my_genres.sql)
-
-
-### [19. Rotten tomatoes](./102-rating_shows.sql)
-* Import the database hbtn_0d_tvshows_rate dump to your MySQL server: download
-
-
-### [20. Best genre](./103-rating_genres.sql)
-* Import the database dump from hbtn_0d_tvshows_rate to your MySQL server: download (same as 102-rating_shows.sql)
 
 ---
 
@@ -167,6 +156,8 @@ Flask
 * [10 common stumbling blocks for SQLAlchemy newbies](http://alextechrants.blogspot.com/2013/11/10-common-stumbling-blocks-for.html)
 * [Python SQLAlchemy Cheatsheet](https://www.pythonsheets.com/notes/python-sqlalchemy.html)
 * [SQLAlchemy ORM Tutorial for Python Developers (Warning: This tutorial is with PostgreSQL, but the concept of SQLAlchemy is the same with MySQL)](https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/)
+* [SQLAlchemy ORM - Working with Joins](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_working_with_joins.htm)
+* [Basic Relationship Patterns](https://docs.sqlalchemy.org/en/13/orm/basic_relationships.html)
 
 ---
 
