@@ -51,11 +51,11 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
  
 ## Tasks:clipboard:
  
-### [0. What's my status? #0 ]
+### [0. What's my status? #0]
 * Write a Python script that fetches https://intranet.hbtn.io/status
  
  
-### [1. Response header value #0 ]
+### [1. Response header value #0]
 * Write a Python script that takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable found in the header of the response.
  
  
@@ -63,7 +63,7 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
 * Write a Python script that takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in utf-8)
  
  
-### [3. Error code #0 ]
+### [3. Error code #0]
 * Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in utf-8).
  
  
@@ -83,11 +83,11 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
 * Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response.
  
  
-### [8. Search API ]
+### [8. Search API]
 * Write a Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
  
  
-### [9. My Github! ] 
+### [9. My Github!] 
 * Write a Python script that takes your Github credentials (username and password) and uses the Github API to display your id
 
 ---
@@ -102,9 +102,11 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
 ## Resources:books:
  
 Read or watch:
-* [HTTP (HyperText Transfer Protocol) ](https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/http_basics.html)
-* [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
-* [Using cURL to debug](https://intranet.hbtn.io/concepts/51)
+* [How to Fetch Internet Resources Using The urllib Package](https://docs.python.org/3/howto/urllib2.html)
+* [urllib.request — Extensible library for opening URLs](https://docs.python.org/3/library/urllib.request.html#module-urllib.request)
+* [Requests: HTTP for Humans™](https://requests.readthedocs.io/en/master/)
+* [Urllib - GET Requests || Python Tutorial || Learn Python Programming](https://www.youtube.com/watch?v=LosIGgon_KM)
+* [Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://www.youtube.com/watch?v=tb8gHvYlCFs&t=2s)
  
 ---
  
