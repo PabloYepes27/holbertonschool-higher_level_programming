@@ -12,9 +12,9 @@ if __name__ == "__main__":
         values = {'q': sys.argv[1]}
     else:
         values = {'q': ""}
-    req = requests.post(url, data=values)
+    req = requests.post(url, values)
     try:
-        if (len(req.json()) > 0 and req.json.get('id') and req.json.get('name')):
+        if (len(req.json()) > 0):
             print('[{}] {}'.format(req.json()['id'], req.json()['name']))
         else:
             print("No result")
