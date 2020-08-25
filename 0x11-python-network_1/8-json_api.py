@@ -13,9 +13,9 @@ if __name__ == "__main__":
     else:
         values = {'q': ""}
     req = requests.post(url, data=values)
-    if (len(req.json()) is not 0 and req.json()):
+    if (len(req.json()) is not 0 and req.json.get(
+            'id') and req.json.get('name')):
         try:
-            req.json()
             print('[{}] {}'.format(req.json()['id'], req.json()['name']))
         except:
             print("Not a valid JSON")
