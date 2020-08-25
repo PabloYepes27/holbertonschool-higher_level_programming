@@ -107,6 +107,10 @@ Read or watch:
 * [Requests: HTTP for Humans™](https://requests.readthedocs.io/en/master/)
 * [Urllib - GET Requests || Python Tutorial || Learn Python Programming](https://www.youtube.com/watch?v=LosIGgon_KM)
 * [Python Requests Tutorial: Request Web Pages, Download Images, POST Data, Read JSON, and More](https://www.youtube.com/watch?v=tb8gHvYlCFs&t=2s)
+* [Request advanced usage](https://requests.readthedocs.io/en/master/user/advanced/#request-and-response-objects)
+* [GitHub API](https://developer.github.com/v3/users/#get-the-authenticated-user)
+* [Basic Authentication](https://developer.github.com/v3/auth/#basic-authentication)
+* [Personal acces token aspassword](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
  
 ---
  
