@@ -1,10 +1,9 @@
 #!/usr/bin/node
-const factor = function (number) {
-  let result = 1;
-  let count;
-  for (count = number; count > 1; count--) {
-    result *= count;
+function factorial (number) {
+  if (isNaN(number) || number === 1) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
   }
-  return result;
-};
-console.log(factor(process.argv[2]));
+}
+console.log(factorial(parseInt(process.argv[2])));
