@@ -4,6 +4,6 @@ if (isNaN(argum)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < parseInt(argum); i++) {
-    console.log('#'.repeat(parseInt(argum)));
+    console.log('X'.repeat(parseInt(argum)));
   }
 }
