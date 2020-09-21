@@ -3,28 +3,23 @@
 module.exports = class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
-      this.height = h;
       this.width = w;
+      this.height = h;
     }
   }
 
-  // method that prints a rectangle
   print () {
-    for (let i = 0; i < this.height; i++) {
+    for (let t = 0; t < this.height; t++) {
       console.log('X'.repeat(this.width));
     }
   }
 
-  // method that prints a rectangle
   rotate () {
-    const a = this.width;
-    this.width = this.height;
-    this.height = a;
+    [this.height, this.width] = [this.width, this.height];
   }
 
-  // method that prints a rectangle
   double () {
-    this.width *= 2;
-    this.height *= 2;
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
 };
