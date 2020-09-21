@@ -2,7 +2,7 @@
 // Write a class Square that defines a square and inherits from Rectangle of 4-rectangle.js
 const square = require('./5-square');
 
-class Square extends square {
+module.exports = class Square extends square {
   // method that prints a rectangle usign 'C' char
   charPrint (c) {
     if (c === undefined) {
@@ -13,5 +13,4 @@ class Square extends square {
       }
     }
   }
-}
-module.exports = Square;
+};
