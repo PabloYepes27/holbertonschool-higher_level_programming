@@ -58,43 +58,75 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
     You must use the jQuery API
  
  
-### [2. Status code ]
-* Write a script that display the status code of a GET request.
+### [2. Click and turn red]
+* Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
  
- 
-### [3. Star wars movie title]
-* Write a script that prints the title of a Star Wars movie where the episode number matches a given integer.
+### [3. Add `.red` class]
+* Write a Javascript script that adds the class red to the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#red_header:
 
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
  
  
-### [4. Star wars Wedge Antilles]
-* Write a script that prints the number of movies where the character “Wedge Antilles” is present.
+### [4. Toggle classes]
+* Write a Javascript script that toggles the class of the HTML tag HEADER to red (#FF0000) when the user clicks on the tag DIV#toggle_header:
 
+The HEADER tag must always have one class: red or green, never both in the same time, never empty.
+If the current class is red, when the user click on DIV#toggle_header, the class must be updated to green ; and the reverse.
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
  
  
-### [5. Loripsum]
-* Write a script that gets the contents of a webpage and stores it in a file
+### [5. List of elements ]
+* Write a Javascript script that adds a LI element to a list when the user clicks on the tag DIV#add_item:
 
+The new element must be: <li>Item</li>
+The new element must be added to UL.my_list
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
  
  
-### [6. How many completed?]
-* Write a script that computes the number of tasks completed by user id.
+### [6. Change the text ]
+* Write a Javascript script that updates the text of the HTML tag HEADER to “New Header!!!” when the user clicks on DIV#update_header
+
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
 
 
+### [7. Star wars character]
+* Write a Javascript script that fetches and replaces the name of this URL: https://swapi-api.hbtn.io/api/people/5/?format=json
 
-### [7. Who was playing in this movie?]
-* Write a script that prints all characters of a Star Wars movie:
+The name must be displayed in the HTML tag DIV#character
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
+ 
+ 
+### [8. Star Wars movies]
+* Write a Javascript script that fetches and lists all movies title by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
 
+All movie titles must be list in the HTML tag UL#list_movies
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
  
  
-### [8. Right order ]
-* Write a script that prints all characters of a Star Wars movie:
+### [9. Say Hello!] 
+* Write a Javascript script that fetches from https://fourtonfish.com/hellosalut/?lang=fr and displays the value of hello from that fetch in the HTML’s tag DIV#hello.
 
- 
- 
-### [9. Twitter Auth ] 
-* Write a Javascript script that takes in 3 strings and sends a search request to the [Twitter API](https://developer.twitter.com/en/docs/api-reference-index)
+The translation of “hello” must be display in the HTML tag DIV#hello
+You can’t use document.querySelector to select the HTML tag
+You must use the jQuery API
+Your script must work when it is imported from the HEAD tag
+
+
+### [10. No jQuery - document loaded ] 
+* Write a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000):
+
+You must use document.querySelector to select the HTML tag
+You can’t use the jQuery API
+Note: Your script must be imported from the HEAD tag, not at the end of the HTML
  
 ---
  
@@ -108,10 +140,19 @@ https://github.com/PabloYepes27/holbertonschool-higher_level_programming.git
 ## Resources:books:
  
 
-* [Working with JSON data](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
-* [The workflow of accessing the attributes of a simply-created JSON object](https://medium.com/@vietkieutie/the-workflow-of-accessing-the-attributes-of-a-simply-created-json-object-82a5b33e2319)
-* [request module](https://github.com/request/request)
-* [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
+* [What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+* [Selector](https://intranet.hbtn.io/rltoken/RtFB5Ycdvvk5OYv79zgr6A)
+* [Get and set content](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
+* [Manipulate CSS classes](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-css-classes/)
+* [Manipulate DOM elements](https://jquery-tutorial.net/dom-manipulation/the-append-and-prepend-methods/)
+* [API](https://oscarotero.com/jquery/)
+* [Introduction](https://jquery-tutorial.net/ajax/introduction/)
+* [GET & POST request](https://jquery-tutorial.net/ajax/the-get-and-post-methods/)
+* [jQuery Ajax Tutorial #1 - Using AJAX & API’s](https://www.youtube.com/watch?v=fEYx8dQr_cQ)
+* [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
+* [jQuery](https://jquery.com/)
+* [jQuery API](https://api.jquery.com/)
+* [jQuery Ajax](https://learn.jquery.com/ajax/)
  
 ---
  
